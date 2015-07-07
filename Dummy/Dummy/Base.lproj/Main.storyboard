@@ -35,10 +35,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kq-tw-oV0">
-                                <rect key="frame" x="260" y="344" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="251" y="342" width="155" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Button number 3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qyp-Eg-IdN" kind="modal" id="4jy-W9-aAN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -47,7 +51,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="343"/>
+            <point key="canvasLocation" x="461" y="291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c7y-aF-her">
+            <objects>
+                <viewController id="qyp-Eg-IdN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NpG-tl-E7X"/>
+                        <viewControllerLayoutGuide type="bottom" id="3J3-yw-hYg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L9G-gs-hbl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSr-Is-abt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="291"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d4M-1i-8n0">
