@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D1CB5C35-5588-4F84-972E-6BD73CA0D4E2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Dummy</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>82074BE71C8E835410AB0E404C403312C361CFFF</key>
 		<string>https://github.com/CJBradley/LCProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Dummy/Dummy.xcodeproj</string>
+	<string>Dummy/Dummy.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>82074BE71C8E835410AB0E404C403312C361CFFF</key>
