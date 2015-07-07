@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWP-Yj-Fb8">
-                                <rect key="frame" x="29" y="159" width="90" height="90"/>
+                                <rect key="frame" x="16" y="159" width="90" height="90"/>
                                 <state key="normal" title="Tasks">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TE-hi-rv9">
-                                <rect key="frame" x="144" y="109" width="90" height="90"/>
+                                <rect key="frame" x="135" y="109" width="90" height="90"/>
                                 <state key="normal" title="Event">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,7 +35,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Elv-xN-Bn6">
-                                <rect key="frame" x="29" y="379" width="90" height="90"/>
+                                <rect key="frame" x="16" y="379" width="90" height="90"/>
                                 <state key="normal" title="Calendar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,18 +47,30 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-ye-QA4">
-                                <rect key="frame" x="144" y="433" width="90" height="90"/>
+                                <rect key="frame" x="135" y="433" width="90" height="90"/>
                                 <state key="normal" title="Reminders">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MF0-Rj-fzS">
+                                <rect key="frame" x="21" y="299" width="195" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-GJ-Ajz">
+                                <rect key="frame" x="241" y="299" width="116" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="alarmsButton" destination="Gcc-XO-v3y" id="drl-sZ-rYN"/>
                         <outlet property="calendarButton" destination="Elv-xN-Bn6" id="ntY-wd-iW7"/>
+                        <outlet property="dateTimeTextField" destination="Yd0-GJ-Ajz" id="2h6-9h-AV6"/>
                         <outlet property="eventButton" destination="0TE-hi-rv9" id="fFo-uO-PtX"/>
+                        <outlet property="eventTextField" destination="MF0-Rj-fzS" id="w9a-Yq-JPp"/>
                         <outlet property="notesButton" destination="EYh-11-7Xd" id="A0m-Em-brD"/>
                         <outlet property="remindersButton" destination="Stl-ye-QA4" id="mmQ-GM-fH9"/>
                         <outlet property="taskButton" destination="YWP-Yj-Fb8" id="347-j7-kg9"/>

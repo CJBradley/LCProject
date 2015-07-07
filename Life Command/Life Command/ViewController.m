@@ -16,6 +16,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *calendarButton;
 @property (strong, nonatomic) IBOutlet UIButton *remindersButton;
 @property (strong, nonatomic) IBOutlet UIButton *alarmsButton;
+@property (strong, nonatomic) IBOutlet UITextField *eventTextField;
+@property (strong, nonatomic) IBOutlet UITextField *dateTimeTextField;
 @end
 
 @implementation ViewController
