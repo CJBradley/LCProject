@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yfn-Gt-R2X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Events-->
@@ -145,7 +146,27 @@
                     <view key="view" contentMode="scaleToFill" id="Vg6-Wc-cd8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Task" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6J-nh-iEw">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-yz-Mob">
+                                <rect key="frame" x="16" y="110" width="568" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TDF-yz-Mob" firstAttribute="top" secondItem="q6J-nh-iEw" secondAttribute="bottom" constant="8" id="7ZU-If-qyH"/>
+                            <constraint firstItem="BAr-qw-ADa" firstAttribute="top" secondItem="TDF-yz-Mob" secondAttribute="bottom" constant="20" id="8ge-Bg-vag"/>
+                            <constraint firstItem="TDF-yz-Mob" firstAttribute="leading" secondItem="Vg6-Wc-cd8" secondAttribute="leadingMargin" id="Oxf-Qo-ssF"/>
+                            <constraint firstItem="q6J-nh-iEw" firstAttribute="trailing" secondItem="Vg6-Wc-cd8" secondAttribute="trailingMargin" id="eDs-xx-ZpW"/>
+                            <constraint firstItem="TDF-yz-Mob" firstAttribute="trailing" secondItem="Vg6-Wc-cd8" secondAttribute="trailingMargin" id="qjU-Sh-Wtg"/>
+                            <constraint firstItem="q6J-nh-iEw" firstAttribute="top" secondItem="EqN-5W-UR9" secondAttribute="bottom" constant="8" id="xDb-6i-fDV"/>
+                            <constraint firstItem="q6J-nh-iEw" firstAttribute="leading" secondItem="Vg6-Wc-cd8" secondAttribute="leadingMargin" id="y4i-bw-PrD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYM-66-wRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
