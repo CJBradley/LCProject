@@ -16,7 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="y37-aE-2ds">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Event" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDi-4P-IPF">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vQM-Wa-bS0">
+                                <rect key="frame" x="16" y="110" width="568" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I1g-PV-noW" firstAttribute="top" secondItem="vQM-Wa-bS0" secondAttribute="bottom" constant="20" id="24X-2a-dQN"/>
+                            <constraint firstItem="ZDi-4P-IPF" firstAttribute="top" secondItem="M4q-yS-dxS" secondAttribute="bottom" constant="8" id="T3a-yy-YII"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vQM-Wa-bS0" secondAttribute="trailing" id="aQq-dx-fbt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZDi-4P-IPF" secondAttribute="trailing" id="ept-1V-jcr"/>
+                            <constraint firstItem="vQM-Wa-bS0" firstAttribute="top" secondItem="ZDi-4P-IPF" secondAttribute="bottom" constant="8" id="r2E-JD-fif"/>
+                            <constraint firstItem="vQM-Wa-bS0" firstAttribute="leading" secondItem="y37-aE-2ds" secondAttribute="leadingMargin" id="tOM-Tb-beU"/>
+                            <constraint firstItem="ZDi-4P-IPF" firstAttribute="leading" secondItem="y37-aE-2ds" secondAttribute="leadingMargin" id="w1P-zC-MUV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nam-f3-clH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,7 +54,27 @@
                     <view key="view" contentMode="scaleToFill" id="vPO-eX-0SD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Note" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-Kf-XVg">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sLv-TT-Vso">
+                                <rect key="frame" x="16" y="110" width="568" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fhe-Kf-XVg" firstAttribute="top" secondItem="Kq0-uU-ScY" secondAttribute="bottom" constant="8" id="LxX-e6-V6i"/>
+                            <constraint firstItem="sLv-TT-Vso" firstAttribute="trailing" secondItem="vPO-eX-0SD" secondAttribute="trailingMargin" id="XQg-d1-ViA"/>
+                            <constraint firstItem="sLv-TT-Vso" firstAttribute="leading" secondItem="vPO-eX-0SD" secondAttribute="leadingMargin" id="Y4W-qN-L7L"/>
+                            <constraint firstItem="fhe-Kf-XVg" firstAttribute="trailing" secondItem="vPO-eX-0SD" secondAttribute="trailingMargin" id="jsw-nN-egU"/>
+                            <constraint firstItem="sLv-TT-Vso" firstAttribute="top" secondItem="fhe-Kf-XVg" secondAttribute="bottom" constant="8" id="oTh-w1-bCl"/>
+                            <constraint firstItem="Zo3-OG-xiA" firstAttribute="top" secondItem="sLv-TT-Vso" secondAttribute="bottom" constant="20" id="rwI-dp-ozf"/>
+                            <constraint firstItem="fhe-Kf-XVg" firstAttribute="leading" secondItem="vPO-eX-0SD" secondAttribute="leadingMargin" id="zB5-bI-lPA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1E-ff-0aS" userLabel="First Responder" sceneMemberID="firstResponder"/>
