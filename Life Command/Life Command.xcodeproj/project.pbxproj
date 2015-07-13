@@ -14,6 +14,7 @@
 		4E9429A21B4B8CEF0069BB54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9429A11B4B8CEF0069BB54 /* Images.xcassets */; };
 		4E9429A51B4B8CEF0069BB54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E9429A31B4B8CEF0069BB54 /* LaunchScreen.xib */; };
 		4E9429B11B4B8CEF0069BB54 /* Life_CommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9429B01B4B8CEF0069BB54 /* Life_CommandTests.m */; };
+		51C77E181B545F0B0093AD32 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C77E171B545F0B0093AD32 /* NewEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4E9429AA1B4B8CEF0069BB54 /* Life CommandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Life CommandTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9429AF1B4B8CEF0069BB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E9429B01B4B8CEF0069BB54 /* Life_CommandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Life_CommandTests.m; sourceTree = "<group>"; };
+		51C77E161B545F0A0093AD32 /* Life Command-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Life Command-Bridging-Header.h"; sourceTree = "<group>"; };
+		51C77E171B545F0B0093AD32 /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				4E9429A11B4B8CEF0069BB54 /* Images.xcassets */,
 				4E9429A31B4B8CEF0069BB54 /* LaunchScreen.xib */,
 				4E9429941B4B8CEF0069BB54 /* Supporting Files */,
+				51C77E171B545F0B0093AD32 /* NewEventViewController.swift */,
+				51C77E161B545F0A0093AD32 /* Life Command-Bridging-Header.h */,
 			);
 			path = "Life Command";
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				4E94299D1B4B8CEF0069BB54 /* ViewController.m in Sources */,
 				4E94299A1B4B8CEF0069BB54 /* AppDelegate.m in Sources */,
+				51C77E181B545F0B0093AD32 /* NewEventViewController.swift in Sources */,
 				4E9429971B4B8CEF0069BB54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,9 +355,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Life Command/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Life Command/Life Command-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,9 +368,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Life Command/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Life Command/Life Command-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -418,6 +429,7 @@
 				4E9429B61B4B8CEF0069BB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E9429B71B4B8CEF0069BB54 /* Build configuration list for PBXNativeTarget "Life CommandTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +438,7 @@
 				4E9429B91B4B8CEF0069BB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
