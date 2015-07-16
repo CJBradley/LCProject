@@ -22,6 +22,13 @@
 @end
 
 @implementation ViewController
+- (IBAction)TextFieldDone2:(id)sender {
+     [sender resignFirstResponder];
+}
+
+- (IBAction)TextFieldDone:(id)sender {
+     [sender resignFirstResponder];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
