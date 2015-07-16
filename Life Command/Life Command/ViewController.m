@@ -67,7 +67,27 @@
     [dateFormat setDateFormat:@"dd/MM/yyyy"];
     NSString *dateString = [dateFormat stringFromDate:today];
     self.dateLabel.text = dateString;
+    
 
+}
+
+- (void) touchesBegan: (NSSet *)touches
+            withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    
+    if ([self.eventTextField isFirstResponder] &&
+        [touch view] != self.eventTextField) {
+        
+        [self.eventTextField resignFirstResponder];
+    }
+    
+    if ([self.dateTimeTextField isFirstResponder] &&
+        [touch view] != self.eventTextField) {
+        
+        [self.dateTimeTextField resignFirstResponder];
+    }
+    
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (void)didReceiveMemoryWarning {
