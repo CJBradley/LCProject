@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>146619AB-1F95-4BDC-B1BC-9A47E8B5E2C9</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Life Command</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>82074BE71C8E835410AB0E404C403312C361CFFF</key>
 		<string>https://github.com/CJBradley/LCProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Life Command/Life Command.xcodeproj</string>
+	<string>Life Command/Life Command.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>82074BE71C8E835410AB0E404C403312C361CFFF</key>

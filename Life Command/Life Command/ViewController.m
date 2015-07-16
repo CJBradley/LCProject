@@ -67,6 +67,7 @@
     [dateFormat setDateFormat:@"dd/MM/yyyy"];
     NSString *dateString = [dateFormat stringFromDate:today];
     self.dateLabel.text = dateString;
+
 }
 
 - (void)didReceiveMemoryWarning {
