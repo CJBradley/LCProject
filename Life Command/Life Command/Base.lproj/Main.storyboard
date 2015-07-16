@@ -357,6 +357,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dX3-wa-H1F" appends="YES" id="upP-LP-V0M"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Life Command" id="PnN-xS-c5L"/>
                     <connections>
@@ -372,8 +376,37 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="dX3-wa-H1F">
+                    <connections>
+                        <segue destination="GXu-ZH-L3j" kind="custom" id="nlo-Lp-CIP"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1352" y="-79"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DxW-CF-nFD">
+            <objects>
+                <viewController id="GXu-ZH-L3j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w3n-YD-m5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVQ-Qj-2Pk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Zq-59-emD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dbj-r9-czU">
+                                <rect key="frame" x="10" y="11" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxr-VI-anI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="790"/>
         </scene>
         <!--Tasks-->
         <scene sceneID="W0x-Oo-AJW">
