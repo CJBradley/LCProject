@@ -19,6 +19,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *eventTextField;
 @property (strong, nonatomic) IBOutlet UITextField *dateTimeTextField;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) IBOutlet UIButton *plusButton;
+@property (strong, nonatomic) IBOutlet UIButton *createEventButton;
+
 @end
 
 @implementation ViewController
@@ -28,6 +31,14 @@
 
 - (IBAction)TextFieldDone:(id)sender {
      [sender resignFirstResponder];
+}
+
+
+- (IBAction)GetTask:(id)sender {
+    NSString *event;
+    NSString *date;
+    event = self.eventTextField.text;
+    date = self.dateTimeTextField.text;
 }
 
 - (void)viewDidLoad {
@@ -68,6 +79,21 @@
     self.alarmsButton.layer.shadowOpacity = 0.5;
     self.alarmsButton.layer.borderWidth = 3;
     self.alarmsButton.layer.borderColor = [UIColor blackColor].CGColor;
+    
+    
+    self.plusButton.layer.cornerRadius = 50.0;
+    self.plusButton.layer.shadowRadius = 10;
+    self.plusButton.layer.shadowOpacity = 0.0;
+    self.plusButton.layer.borderWidth = 1;
+    self.plusButton.layer.borderColor = [UIColor blackColor].CGColor;
+    
+    
+    self. createEventButton.layer.cornerRadius = 45.0;
+    self. createEventButton.layer.shadowRadius = 10;
+    self. createEventButton.layer.shadowOpacity = 0.0;
+    self. createEventButton.layer.borderWidth = 1;
+    self. createEventButton.layer.borderColor = [UIColor blackColor].CGColor;
+   
     
     NSDate *today = [NSDate date];
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
